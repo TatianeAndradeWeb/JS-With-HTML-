@@ -1,9 +1,9 @@
 export class Card{
-    criarCard =() =>{
+    criarCard =(imagemdocard, textoCard) =>{
         const div = document.createElement('div');
         div.className = 'divCard';
-        const imagem = Document.createElement('img');
-        imagem.src =imagemdoCard;
+        const imagem = document.createElement('img');
+        imagem.src =imagemdocard;
         const titulo =document.createElement('h2');
         const texto = document.createElement('p');
         texto.innerText =textoCard;
@@ -12,8 +12,8 @@ export class Card{
         div.appendChild(titulo);
         div.appendChild(texto);
 
-        ShadowRoot.appendChild(div);
-        
+        root.appendChild(div);
+
 
     }
 }

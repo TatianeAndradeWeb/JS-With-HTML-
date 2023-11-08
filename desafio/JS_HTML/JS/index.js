@@ -2,8 +2,8 @@ import { Card } from "./card.js";
 import { NavBar } from "./navbar.js";
 const navBar = new NavBar();
 navBar.crianavBar();
-const Card = new Card();
-navBar.crianavBar();
+const card = new Card();
+
 
 const produtos = [
  {
@@ -15,5 +15,5 @@ const produtos = [
 ]
 
 produtos.forEach(produto => {
-    Card.criarCard(produto.imagem, produto.nome, produto.texto,)
+    card.criarCard(produto.imagem, produto.nome, produto.texto,)
 })
